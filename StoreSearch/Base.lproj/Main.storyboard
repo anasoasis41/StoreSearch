@@ -28,7 +28,7 @@
                             </tableView>
                             <searchBar contentMode="redraw" placeholder="App name, artist, song, album..." translatesAutoresizingMaskIntoConstraints="NO" id="PcW-fz-EdT">
                                 <rect key="frame" x="0.0" y="20" width="320" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="OeZ-cP-eTt"/>
                                 </connections>
