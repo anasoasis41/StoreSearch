@@ -27,6 +27,7 @@ class SearchViewController: UIViewController {
         cellNib = UINib(nibName:TableView.CellIdentifiers.nothingFoundCell, bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier:TableView.CellIdentifiers.nothingFoundCell)
         
+        // keyboard visible
         searchBar.becomeFirstResponder()
     }
 
@@ -77,8 +78,8 @@ extension SearchViewController : UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: TableView.CellIdentifiers.searchResultCell, for: indexPath) as! SearchResultCell
             
             let searchResult = searchResults[indexPath.row]
-            cell.textLabel?.text = searchResult.name
-            cell.detailTextLabel?.text = searchResult.artistName
+            cell.nameLabel.text = searchResult.name
+            cell.artistNameLabel.text = searchResult.artistName
              return cell
         }
     }
