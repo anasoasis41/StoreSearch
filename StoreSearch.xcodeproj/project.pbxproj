@@ -64,12 +64,12 @@
 		CB11445122F97D1F006838A6 /* StoreSearch */ = {
 			isa = PBXGroup;
 			children = (
+				CB11445222F97D1F006838A6 /* AppDelegate.swift */,
 				CB5D96F222FAE3F100ED859D /* Model */,
 				CB5D96F322FAE3FB00ED859D /* View */,
 				CB5D96F422FAE40200ED859D /* Controller */,
 				CB5D96F522FAE4B000ED859D /* Helper */,
 				CB5D96F722FAE50100ED859D /* Service */,
-				CB11445222F97D1F006838A6 /* AppDelegate.swift */,
 				CB11445622F97D1F006838A6 /* Main.storyboard */,
 				CB11445922F97D20006838A6 /* Assets.xcassets */,
 				CB11445B22F97D20006838A6 /* LaunchScreen.storyboard */,
