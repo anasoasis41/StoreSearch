@@ -90,6 +90,6 @@ class SearchResult: Codable, CustomStringConvertible {
 }
 
 // Range array from A to Z
-func > (lhs: SearchResult, rhs: SearchResult) -> Bool {
+func < (lhs: SearchResult, rhs: SearchResult) -> Bool {
     return lhs.name.localizedStandardCompare(rhs.name) == .orderedAscending
 }

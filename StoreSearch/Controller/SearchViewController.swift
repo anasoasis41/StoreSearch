@@ -85,16 +85,24 @@ extension SearchViewController : UISearchBarDelegate {
             hasSearched = true
             searchResults = []
             
-            let url = itunesUrl(searchText: searchBar.text!)
-            print("URL: '\(url)'")
+            let queue = DispatchQueue.global()
+            let url = self.itunesUrl(searchText: searchBar.text!)
             
-            if let data = performStoreRequest(with: url) {
-                searchResults = parse(data: data)
-                // order result
-                searchResults.sort(by: >)
+            queue.async {
+                // Code that needs run in the background
+                if let data = self.performStoreRequest(with: url) {
+                    self.searchResults = self.parse(data: data)
+                    self.searchResults.sort(by: <)
+                    
+                    // Update the user interface in the Main Thread
+                    DispatchQueue.main.async {
+                        self.isLoading = false
+                        self.tableView.reloadData()
+                    }
+                    return
+                }
             }
-            isLoading = false
-            tableView.reloadData()
+            
         }
         
     }
