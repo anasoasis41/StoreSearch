@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18568CE223097A6100152DA5 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18568CE123097A6100152DA5 /* UIImageView+DownloadImage.swift */; };
 		CB11445322F97D1F006838A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11445222F97D1F006838A6 /* AppDelegate.swift */; };
 		CB11445522F97D1F006838A6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11445422F97D1F006838A6 /* SearchViewController.swift */; };
 		CB11445822F97D1F006838A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB11445622F97D1F006838A6 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18568CE123097A6100152DA5 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 		CB11444F22F97D1F006838A6 /* StoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB11445222F97D1F006838A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB11445422F97D1F006838A6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			children = (
 				CB5D96F622FAE4D100ED859D /* Localization */,
 				CB5D96F822FAE53B00ED859D /* TableView.swift */,
+				18568CE123097A6100152DA5 /* UIImageView+DownloadImage.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			files = (
 				CB11445522F97D1F006838A6 /* SearchViewController.swift in Sources */,
 				CB5D96F922FAE53B00ED859D /* TableView.swift in Sources */,
+				18568CE223097A6100152DA5 /* UIImageView+DownloadImage.swift in Sources */,
 				CB11446522F9AAC7006838A6 /* SearchResult.swift in Sources */,
 				CB5D96F122FAE10500ED859D /* SearchResultCell.swift in Sources */,
 				CB11445322F97D1F006838A6 /* AppDelegate.swift in Sources */,

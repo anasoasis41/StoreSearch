@@ -159,30 +159,22 @@ extension SearchViewController : UITableViewDelegate, UITableViewDataSource {
             let spinner = cell.viewWithTag(100) as! UIActivityIndicatorView
             spinner.startAnimating()
             return cell
-        } else {
-        
-        if searchResults.count == 0 {
+        } else if searchResults.count == 0 {
             return tableView.dequeueReusableCell(withIdentifier: TableView.CellIdentifiers.nothingFoundCell, for: indexPath)
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: TableView.CellIdentifiers.searchResultCell, for: indexPath) as! SearchResultCell
             
             let searchResult = searchResults[indexPath.row]
-            cell.nameLabel.text = searchResult.name
+            cell.configure(for: searchResult)
             
-            if searchResult.artist.isEmpty {
-                cell.artistNameLabel.text = "Unknow"
-            } else {
-                cell.artistNameLabel.text = String(format: "%@ (%@)", searchResult.artist, searchResult.type)
+            return cell
             }
-             return cell
-            }
-        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
+
     func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         if searchResults.count == 0 || isLoading {
             return nil
