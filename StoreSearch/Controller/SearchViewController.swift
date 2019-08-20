@@ -57,8 +57,7 @@ class SearchViewController: UIViewController {
         }
         let encodedText = searchText.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
         
-        let urlString = String(format:"https://itunes.apple.com/search?" +
-            "term=\(encodedText)&limit=200&entity=\(kind)")
+        let urlString = "https://itunes.apple.com/search?term=\(encodedText)&limit=200&entity=\(kind)"
         let url = URL(string: urlString)
         return url!
     }
@@ -173,6 +172,7 @@ extension SearchViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "showDetail", sender: indexPath)
     }
 
     func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
