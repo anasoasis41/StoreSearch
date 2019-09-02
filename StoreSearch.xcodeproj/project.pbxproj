@@ -23,6 +23,8 @@
 		CB5D96F122FAE10500ED859D /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D96F022FAE10500ED859D /* SearchResultCell.swift */; };
 		CB5D96F922FAE53B00ED859D /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D96F822FAE53B00ED859D /* TableView.swift */; };
 		CB5D96FB22FAE6C000ED859D /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB5D96FA22FAE6C000ED859D /* NothingFoundCell.xib */; };
+		CB698421231D0FF9002202E9 /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB698420231D0FF9002202E9 /* LandscapeViewController.swift */; };
+		CB698423231D7FAF002202E9 /* FadeOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB698422231D7FAF002202E9 /* FadeOutAnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		CB5D96F022FAE10500ED859D /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		CB5D96F822FAE53B00ED859D /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		CB5D96FA22FAE6C000ED859D /* NothingFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
+		CB698420231D0FF9002202E9 /* LandscapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
+		CB698422231D7FAF002202E9 /* FadeOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeOutAnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 			children = (
 				CB561F3023143BB8006BF8C1 /* BounceAnimationController.swift */,
 				CB561F3223144432006BF8C1 /* SlideOutAnimationController.swift */,
+				CB698422231D7FAF002202E9 /* FadeOutAnimationController.swift */,
 			);
 			path = anim;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			children = (
 				CB11445422F97D1F006838A6 /* SearchViewController.swift */,
 				180BC5A8230C20040058848E /* DetailViewController.swift */,
+				CB698420231D0FF9002202E9 /* LandscapeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -235,7 +241,9 @@
 				CB5D96F122FAE10500ED859D /* SearchResultCell.swift in Sources */,
 				CB11445322F97D1F006838A6 /* AppDelegate.swift in Sources */,
 				CB561F3323144432006BF8C1 /* SlideOutAnimationController.swift in Sources */,
+				CB698423231D7FAF002202E9 /* FadeOutAnimationController.swift in Sources */,
 				180BC5A9230C20040058848E /* DetailViewController.swift in Sources */,
+				CB698421231D0FF9002202E9 /* LandscapeViewController.swift in Sources */,
 				CB561F2E23141B7F006BF8C1 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
